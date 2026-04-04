@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thẻ Aside và đường dẫn tuyệt đối</title>
+    <title>Tương tác với Thẻ tự đóng</title>
   </head>
   <body>
     <hr />
@@ -18,11 +18,13 @@
     <hr />
     <main>
       <div style="display: flex">
-        <article style="flex: 2">
+        <section style="flex: 2">
           <h2>Bài viết mới nhất</h2>
-          <h3>Lộ trình học Front-end Web</h3>
-          <p>Nội dung lộ trình học tập...</p>
-        </article>
+          <article>
+            <h3>Lộ trình học Front-end Web</h3>
+            <p>Nội dung lộ trình học tập...</p>
+          </article>
+        </section>
 
         <aside style="flex: 1; margin-left: 20px">
           <h3>Thông tin phụ</h3>
@@ -37,6 +39,14 @@
     </main>
     <hr />
     <footer>
+      <header>
+        <h4>Đăng ký để nhận bản tin mới nhất</h4>
+      </header>
+      <form action="" method="post">
+        <input type="email" placeholder="Nhập email của bạn" required />
+        <!-- <input type="submit" value="Đăng ký"> -->
+        <button type="submit">Đăng ký</button>
+      </form>
       <p>&copy; 2026 Hoàng Kim Tiến - Học viên Rikei</p>
     </footer>
   </body>
