@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Rikkei</title>
+</head>
+<body>
+    <form action="">
+        <p><strong>Nộp hồ sơ ứng tuyển</strong></p>
+        <fieldset>
+            <legend>Thông tin liên hệ</legend>
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0][1-9]{8}" placeholder="0912345678">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Hồ sơ đính kèm</legend>
+            <label for="cv">Tải lên CV (Định dạng PDF/Word):</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+        </fieldset>
+        <br>
+        <button type="submit">Nộp hồ sơ</button>
+    </form>
+</body>
+</html>
