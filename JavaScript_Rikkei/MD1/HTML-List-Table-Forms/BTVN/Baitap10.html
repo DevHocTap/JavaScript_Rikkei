@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Rikkei</title>
+</head>
+<body>
+    <form action="">
+        <p><strong>Chi tiết Hoá đơn Mua hàng</strong></p>
+        <table>
+            <legend>Hoá đơn điện tử #HĐ-20260310</legend>
+            <thead>
+                <tr>
+                    <th>Tên sản phẩm</th>
+                    <th>Chi tiết</th>
+                    <th>Đơn giá</th>
+                    <th>Thành tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Áo thun Lập trình viên</td>
+                    <td>
+                        <ul>
+                            <li>Màu sắc: Đen</li>
+                            <li>Kích cỡ: XL</li>
+                            <li>Chất liệu: Cotton 100%</li>
+                        </ul>
+                    </td>
+                    <td>250.000đ</td>
+                    <td>250.000đ</td>
+                </tr>
+                <tr>
+                    <td>Bàn phím cơ bản</td>
+                    <td>
+                        <ul>
+                            <li>Switch: Red</li>
+                            <li>Layout: TKL</li>
+                        </ul>
+                    </td>
+                    <td>800.000đ</td>
+                    <td>800.000đ</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" align="right"><strong>Tổng tiền thanh toán:</strong></td>
+                    <td><strong>1.050.000đ</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+        <p><Strong>Đánh giá trải nghiệm mua hàng</Strong></p>
+        <fieldset>
+            <legend>Phản hồi của bạn</legend>
+            <label for="rating">Mức độ hài lòng:</label>
+            <select id="rating" name="rating">
+                <option value="">-- Vui lòng chọn số sao --</option>
+                <option value="5">⭐</option>
+                <option value="4">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐⭐⭐</option>
+                <option value="1">⭐⭐⭐⭐⭐</option>
+            </select>
+            <br><br>
+            <label for="comment">Lời nhận xét chi tiết:</label>
+            <br>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Hãy chia sẻ trải nghiệm của bạn về sản phẩm và dịch vụ..."></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Gửi phản hồi</button>
+    </form>
+</body>
+</html>

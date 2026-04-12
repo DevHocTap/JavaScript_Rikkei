@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Rikkei</title>
+</head>
+<body>
+    <form action="">
+        <p>Khảo sát dịch vụ khách hàng</p>
+
+        <label for="text">Độ tuổi của bạn: </label>
+        <input type="text" id="text">
+        <br>
+        <fieldset>
+            <legend>Giới tính của bạn là gì?</legend>
+            <input type="radio" id="male" name="gender" value="Nam">
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label>
+            <input type="radio" id="Orther" name="gender" value="Khác">
+            <label for="Orther">Khác</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dịch vụ bạn đang quan tâm (có thể chọn nhiều):</legend>
+            <input type="checkbox" id="website" name="service" value="Website">
+            <label for="website">Website</label>
+            <input type="checkbox" id="Mobile App" name="service" value="Mobile App">
+            <label for="Mobile App">Mobile App</label>
+            <input type="checkbox" id="Marketing" name="service" value="Marketing">
+            <label for="Marketing">Marketing</label>
+        </fieldset>
+        <br>
+        <label for="country">Quốc gia đang sinh sống:</label>
+        <select id="country" name="country">
+            <option value="">-- Vui lòng chọn --</option>
+            <option value="Vietnam">Việt Nam</option>
+            <option value="Japan">Nhật Bản</option>
+            <option value="USA">Mỹ</option>
+        </select>
+        <br>
+        <button type="submit">Gửi thông tin</button>
+    </form>
+</body>
+</html>
