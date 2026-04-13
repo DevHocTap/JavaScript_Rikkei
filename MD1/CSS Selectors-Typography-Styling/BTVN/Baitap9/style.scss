@@ -1,0 +1,88 @@
+.box-price {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  padding: 50px;
+  background-color: #f5f7fa;
+  font-family: "Arial", sans-serif;
+
+  .card {
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 12px;
+    padding: 40px 30px;
+    width: 300px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+    &:nth-child(2) {
+      background-color: #ebf5ff;
+      border: 2px solid #3498db;
+      transform: scale(1.05);
+
+      .plan-name {
+        color: #2980b9;
+      }
+    }
+    &:hover {
+      border-color: #3498db;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+      .plan-name {
+        font-weight: 900;
+        color: #3498db;
+      }
+    }
+    .plan-name {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #333;
+      transition: font-weight 0.2s;
+    }
+
+    .plan-price {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 25px;
+
+      span {
+        font-size: 0.9rem;
+        color: #95a5a6;
+        font-weight: normal;
+      }
+    }
+
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
+      border-top: 1px solid #eee;
+
+      li {
+        padding: 12px 0;
+        border-bottom: 1px solid #eee;
+        color: #7f8c8d;
+        font-size: 0.95rem;
+      }
+    }
+
+    .Select-plan {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: #2980b9;
+      }
+    }
+  }
+}

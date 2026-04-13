@@ -1,0 +1,50 @@
+.quote {
+  position: relative;
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 50px 70px;
+  background: #ffffff;
+  border-left: 6px solid #3498db;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  font-family: "Georgia", serif;
+  font-style: italic;
+  line-height: 1.8;
+  color: #444;
+  font-size: 1.1rem;
+
+  &::first-letter {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #3498db;
+    float: left;
+    margin-right: 12px;
+    line-height: 0.9;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 5rem;
+    color: #f0f0f0;
+    font-family: serif;
+    line-height: 1;
+  }
+
+  &::after {
+    content: "\201D \A \A - Tỷ phú công nghệ -";
+
+    display: block;
+    text-align: right;
+    white-space: pre;
+    font-style: normal;
+    color: #999;
+    font-size: 0.95rem;
+    margin-top: 15px;
+    letter-spacing: 1px;
+  }
+}
