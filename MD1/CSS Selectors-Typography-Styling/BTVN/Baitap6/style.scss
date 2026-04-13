@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.coffee-banner {
+  width: 800px;
+  height: 400px;
+  margin: 50px;
+  // padding: 40px;
+  border: 2px solid #6b4014;
+  border-radius: 10px;
+  background: url(banner.png) no-repeat top left / auto;
+
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #b6610d;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 80px;
+  }
+  .content {
+    text-align: justify;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}

@@ -1,0 +1,54 @@
+.card-item {
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1dvh;
+  box-shadow: 0 10px 20px gray;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 20px auto;
+  .shoe {
+    background-color: #fffdfd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .infor {
+    .name {
+      font-size: 15px;
+      color: #333333;
+      margin-bottom: 8px;
+      text-transform: capitalize;
+    }
+
+    .shoe-price {
+      font-size: 16px;
+      font-weight: bold;
+      color: #e74c3c;
+      margin-bottom: 20px;
+    }
+
+    .click-buy {
+      width: 140px;
+      height: 40px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #ffffff;
+      cursor: pointer;
+      margin-bottom: 10px;
+      background-color: rgb(4, 119, 4);
+
+      &:hover {
+        transition: 0.3s;
+
+        background-color: #64b173;
+      }
+    }
+  }
+}
