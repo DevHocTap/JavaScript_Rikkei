@@ -1,0 +1,50 @@
+.projects {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  h2 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+
+  .project-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+    .project-image,
+    .project-content {
+      flex: 1;
+    }
+
+    .project-image img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 30px;
+
+      h3 {
+        color: #2c3e50;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: #7f8c8d;
+        line-height: 1.5;
+      }
+    }
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}
