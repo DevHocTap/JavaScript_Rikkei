@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.booking-section {
+  background-color: #f0f8ff;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.booking-container {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+  background-color: #007bff;
+  color: white;
+  padding: 40px;
+}
+
+.form-box {
+  padding: 40px;
+}
+
+@media (min-width: 992px) {
+  .booking-container {
+    flex-direction: row;
+  }
+
+  .info-box,
+  .form-box {
+    flex: 1;
+  }
+}
+
+.info-box h2 {
+  margin-bottom: 20px;
+}
+.features {
+  list-style: none;
+  margin-top: 30px;
+}
+.features li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+.input-group {
+  margin-bottom: 15px;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+  color: #666;
+}
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
