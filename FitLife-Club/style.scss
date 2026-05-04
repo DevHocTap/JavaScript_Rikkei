@@ -1,4 +1,3 @@
-
 $main-dark: #1e2936;
 $text-brand: #ff2d55;
 $text-gray: #d1d5db;
@@ -68,7 +67,7 @@ body {
 }
 
 /* ==========================================================================
-   HERO SECTION
+   SECTION 1
    ========================================================================== */
 .hero-section {
   position: relative;
@@ -152,21 +151,38 @@ body {
   }
 }
 /* ==========================================================================
-  FEATURES SECTION
+  SECTION 2
    ========================================================================== */
 .features-section {
   height: 490px !important;
-  @include flex-center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $main-dark;
 
+  .feature-card {
+    background-color: lighten($main-dark, 3%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 12px !important;
+    height: 100%;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: lighten($main-dark, 6%) !important;
+      transform: translateY(-5px);
+    }
+  }
+
   .feature-icon-simple {
-    font-size: 2.5rem; 
-    color: $text-brand; 
-    transition: transform 0.3s ease;
+    font-size: 2.8rem !important;
+    color: $text-brand !important;
+    margin-bottom: 1rem;
+    display: block;
   }
 
   .feature-card:hover .feature-icon-simple {
-    transform: scale(1.2); 
+    transform: scale(1.1);
+    color: lighten($text-brand, 10%) !important;
   }
 
   .feature-title-sm {
@@ -182,7 +198,7 @@ body {
   }
 }
 /* ==========================================================================
-   COURSES SECTION
+   SECTION 3
    ========================================================================== */
 .courses-section {
   height: 675px !important;
@@ -261,15 +277,15 @@ body {
    FOOTER SECTION
    ========================================================================== */
 .main-footer {
-  height: 68px !important; 
+  height: 68px !important;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #000000 !important;
-  padding: 0 !important; 
+  padding: 0 !important;
 
   .footer-text {
-    color: #6b7280; 
+    color: #6b7280;
     font-size: 0.875rem;
     letter-spacing: 0.5px;
   }
@@ -279,7 +295,7 @@ body {
    ========================================================================== */
 
 .class-horizontal-card {
-  background-color: #0f172a; 
+  background-color: #0f172a;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
@@ -314,10 +330,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 
   .table {
-    background-color: #1e2936; 
+    background-color: #1e2936;
 
     thead {
-      background-color: #111827; 
+      background-color: #111827;
       border-bottom: 2px solid rgba($text-brand, 0.3);
     }
 
