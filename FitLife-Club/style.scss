@@ -1,0 +1,422 @@
+
+$main-dark: #1e2936;
+$text-brand: #ff2d55;
+$text-gray: #d1d5db;
+$font-main: "Inter", sans-serif;
+$font-logo: "Montserrat", sans-serif;
+
+body {
+  background-color: $main-dark !important;
+  color: #ffffff !important;
+  font-family: $font-main;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.text-brand {
+  color: $text-brand !important;
+}
+
+/* ==========================================================================
+  HEADER
+   ========================================================================== */
+.custom-nav {
+  background-color: $main-dark !important;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 1000;
+
+  .navbar-brand {
+    font-family: $font-logo;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffffff !important;
+
+    .text-brand {
+      color: $text-brand !important;
+    }
+  }
+
+  .nav-link {
+    color: $text-gray !important;
+    font-weight: 500;
+    transition: 0.3s;
+
+    &:hover,
+    &.active {
+      color: $text-brand !important;
+    }
+  }
+
+  .btn-brand,
+  a.btn-brand {
+    background-color: $text-brand !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 0.6rem 1.6rem !important;
+    border-radius: 4px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: inline-block;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: darken($text-brand, 8%) !important;
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  height: 600px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .hero-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 850px;
+    padding: 3rem 1rem;
+
+    .hero-title {
+      font-size: clamp(2rem, 8vw, 3.75rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-desc {
+      color: $text-gray;
+      font-size: 1.15rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .btn-hero,
+  a.btn-hero {
+    background-color: $text-brand !important;
+    color: #ffffff !important;
+    padding: 1rem 2.5rem !important;
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    border-radius: 6px !important;
+    text-decoration: none !important;
+    display: inline-block;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba($text-brand, 0.3);
+
+    &:hover {
+      background-color: darken($text-brand, 10%) !important;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba($text-brand, 0.5);
+    }
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width: 991px) {
+  .custom-nav .navbar-collapse {
+    background-color: lighten($main-dark, 5%);
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+}
+/* ==========================================================================
+  FEATURES SECTION
+   ========================================================================== */
+.features-section {
+  height: 490px !important;
+  @include flex-center;
+  background-color: $main-dark;
+
+  .feature-icon-simple {
+    font-size: 2.5rem; 
+    color: $text-brand; 
+    transition: transform 0.3s ease;
+  }
+
+  .feature-card:hover .feature-icon-simple {
+    transform: scale(1.2); 
+  }
+
+  .feature-title-sm {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .feature-text-sm {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    line-height: 1.6;
+  }
+}
+/* ==========================================================================
+   COURSES SECTION
+   ========================================================================== */
+.courses-section {
+  height: 675px !important;
+  display: flex;
+  align-items: center;
+  background-color: lighten($main-dark, 2%);
+
+  .title-line {
+    width: 60px;
+    height: 4px;
+    background-color: $text-brand;
+    border-radius: 2px;
+  }
+
+  .course-card {
+    background-color: $main-dark;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    &:hover {
+      border-color: $text-brand;
+      transform: translateY(-5px);
+
+      .course-name {
+        color: $text-brand !important;
+        transition: color 0.3s ease;
+      }
+
+      .course-img {
+        transform: scale(1.1);
+      }
+
+      .course-footer a {
+        text-decoration: underline !important;
+      }
+    }
+
+    .course-img-wrapper {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+
+      .course-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .course-badge {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: rgba($text-brand, 0.9);
+        color: white;
+        font-size: 0.7rem;
+        font-weight: 800;
+        padding: 4px 12px;
+        border-radius: 50px;
+        backdrop-filter: blur(4px);
+      }
+    }
+
+    .course-tag {
+      background-color: rgba(255, 255, 255, 0.05);
+      color: $text-gray;
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+  }
+}
+/* ==========================================================================
+   FOOTER SECTION
+   ========================================================================== */
+.main-footer {
+  height: 68px !important; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000 !important;
+  padding: 0 !important; 
+
+  .footer-text {
+    color: #6b7280; 
+    font-size: 0.875rem;
+    letter-spacing: 0.5px;
+  }
+}
+/* ==========================================================================
+   CLASSES & SCHEDULE
+   ========================================================================== */
+
+.class-horizontal-card {
+  background-color: #0f172a; 
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+
+  .class-img-box {
+    flex: 0 0 50%;
+    height: 250px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+  }
+
+  &:hover {
+    border-color: $text-brand;
+    .class-img-box img {
+      transform: scale(1.1);
+    }
+    .hover-brand {
+      color: $text-brand !important;
+    }
+  }
+}
+
+.schedule-table-container {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  .table {
+    background-color: #1e2936; 
+
+    thead {
+      background-color: #111827; 
+      border-bottom: 2px solid rgba($text-brand, 0.3);
+    }
+
+    td,
+    th {
+      vertical-align: middle;
+      border-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .highlight-row {
+      background-color: rgba(17, 24, 39, 0.4);
+    }
+
+    .x-small {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+.bg-card-section {
+  background-color: #1e2936;
+}
+.bg-dark-section {
+  background-color: #0f172a;
+}
+/* ==========================================================================
+   CONTACT PAGE
+   ========================================================================== */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.contact-form-card {
+  background-color: #0f172a !important;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-input {
+  background-color: #1e293b !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+
+  &::placeholder {
+    color: #94a3b8 !important;
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: $text-brand !important;
+    background-color: #1e293b !important;
+    box-shadow: 0 0 0 2px rgba($text-brand, 0.2) !important;
+    outline: none;
+  }
+}
+.form-label {
+  color: #e2e8f0 !important;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.form-check-label {
+  color: #cbd5e1 !important;
+  cursor: pointer;
+}
+
+.btn-hero-submit {
+  background-color: $text-brand !important;
+  color: white !important;
+  padding: 0.8rem !important;
+  font-weight: 700 !important;
+  border: none !important;
+  border-radius: 6px !important;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: darken($text-brand, 10%) !important;
+    transform: translateY(-2px);
+  }
+}
+
+.main-footer {
+  height: 68px !important;
+  background-color: #000000 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.accent-brand {
+  accent-color: $text-brand;
+}

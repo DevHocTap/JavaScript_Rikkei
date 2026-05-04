@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lớp học - FitLife Club</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-dark-custom">
+    <!-- ================= HEADER ================= -->
+    <nav class="navbar navbar-expand-lg sticky-top custom-nav shadow-lg">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center m-0 text-white fw-bold"
+          href="index.html"
+        >
+          <i class="fa-solid fa-dumbbell text-brand me-2"></i>
+          FIT<span class="text-brand ms-1">LIFE</span>
+        </a>
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#fitlifeNav"
+        >
+          <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="fitlifeNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#features">Dịch vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="classes.html">Lớp học</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Liên hệ</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <a href="contact.html" class="btn-brand">Tham gia ngay</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="flex-grow">
+      <!-- ================= CLASSES SECTION ================= -->
+      <section id="classes" class="py-5 bg-card-section">
+        <div class="container py-lg-5">
+          <div class="text-center mb-5">
+            <h2 class="text-3xl fw-bold text-white mb-2 uppercase">
+              Lớp học tiêu biểu
+            </h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div
+                class="class-horizontal-card d-flex flex-column flex-sm-row overflow-hidden"
+              >
+                <div class="class-img-box">
+                  <img
+                    src="./asset/image/weight_lifting_1773061899821.png"
+                    alt="Thể hình"
+                  />
+                </div>
+                <div
+                  class="class-content p-4 d-flex flex-column justify-content-center"
+                >
+                  <span class="text-brand fw-bold small uppercase mb-1"
+                    >Tăng cơ - Giảm mỡ</span
+                  >
+                  <h3 class="text-white fw-bold h4 mb-3">Thể Hình Sức Mạnh</h3>
+                  <p class="text-gray-400 small mb-4">
+                    Cải thiện sức mạnh cơ bắp với tạ tự do và máy móc chuyên
+                    dụng.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-bold hover-brand"
+                  >
+                    Xem chi tiết <i class="fa-solid fa-arrow-right ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div
+                class="class-horizontal-card d-flex flex-column flex-sm-row overflow-hidden"
+              >
+                <div class="class-img-box">
+                  <img
+                    src="./asset/image/yoga_class_1773061880929.png"
+                    alt="Yoga"
+                  />
+                </div>
+                <div
+                  class="class-content p-4 d-flex flex-column justify-content-center"
+                >
+                  <span class="text-brand fw-bold small uppercase mb-1"
+                    >Thư giãn - Dẻo dai</span
+                  >
+                  <h3 class="text-white fw-bold h4 mb-3">Yoga Thiền Định</h3>
+                  <p class="text-gray-400 small mb-4">
+                    Cân bằng tâm trí, tăng cường sự dẻo dai với không gian yên
+                    tĩnh.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-bold hover-brand"
+                  >
+                    Xem chi tiết <i class="fa-solid fa-arrow-right ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SCHEDULE SECTION ================= -->
+      <section id="schedule" class="py-5 bg-dark-section">
+        <div class="container py-lg-5">
+          <div class="text-center mb-5">
+            <h2 class="text-3xl fw-bold text-white mb-2 uppercase">
+              Lịch học tuần này
+            </h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+
+          <div class="table-responsive schedule-table-container shadow-lg">
+            <table class="table table-dark table-hover mb-0">
+              <thead>
+                <tr>
+                  <th class="p-4 text-brand uppercase small">Thời gian</th>
+                  <th class="p-4 text-white uppercase small">Thứ Hai</th>
+                  <th class="p-4 text-white uppercase small">Thứ Tư</th>
+                  <th class="p-4 text-white uppercase small">Thứ Sáu</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-300">
+                <tr>
+                  <td class="p-4 text-brand fw-medium">06:00 - 07:30</td>
+                  <td class="p-4">
+                    Yoga Thiền Định <br /><span class="text-gray-500 x-small"
+                      >PT. Elena</span
+                    >
+                  </td>
+                  <td class="p-4">
+                    Cardio Đốt Mỡ <br /><span class="text-gray-500 x-small"
+                      >PT. David</span
+                    >
+                  </td>
+                  <td class="p-4">
+                    Thể Hình Sức Mạnh <br /><span class="text-gray-500 x-small"
+                      >PT. Marcus</span
+                    >
+                  </td>
+                </tr>
+                <tr class="highlight-row">
+                  <td class="p-4 text-brand fw-medium">17:00 - 18:30</td>
+                  <td class="p-4">Thể Hình Sức Mạnh</td>
+                  <td class="p-4">Zumba Dance</td>
+                  <td class="p-4">Boxing Cơ Bản</td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-brand fw-medium">19:00 - 20:30</td>
+                  <td class="p-4">CrossFit</td>
+                  <td class="p-4">Yoga Thư Giãn</td>
+                  <td class="p-4">Cardio Nâng Cao</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer py-4">
+      <div class="container text-center">
+        <p class="mb-0 footer-text">
+          &copy; 2026 FitLife Club. Fullstack JavaScript Project.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

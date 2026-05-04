@@ -4,89 +4,275 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitLife - Premium Fitness Club</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <div class="logo_box">
-        <h1>FIT LIFE - Phòng tập giá rả chất lượng</h1>
-      </div>
-      <nav>
-        <a href="/FitLife-Club/">Trang chủ</a>
-
-        <a href="/FitLife-Club/service/">Dịch vụ</a>
-
-        <a href="/FitLife-Club/classroom/">Lớp Học</a>
-
-        <a href="/FitLife-Club/about/">Liên hệ</a>
-      </nav>
-      <button>Tham gia ngay</button>
-    </header>
-
-    <main style="min-height: 90vh;">
-      <div>
-        <img src="" alt="FitLife">
-        <p>Phá vỡ giới hạn bản thân</p>
-        <p>Cơ sở vật chất hiện đại, huấn luyện viên chuyên nghiệp. Bắt đầu hành trình thay đổi vóc dáng của bạn ngay hôm nay!</p>
-        <button>Đăng ký thử MIỄN PHÍ</button>
-      </div>
-
-      <div>
-        <p>TẠI SAO CHỌN CHÚNG TÔI</p>
-        <div>
-          <img src="" alt="">
-          <p>Thiết bị hiện đại</p>
-          <p>Trang bị 100% máy móc nhập khẩu mới nhất, đảm bảo hiệu quả tập luyện tối đa.</p>
+  <body class="bg-dark-custom">
+    <!-- ================= HEADER ================= -->
+    <nav class="navbar navbar-expand-lg sticky-top custom-nav shadow-lg">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center m-0 text-white fw-bold"
+          href="index.html"
+        >
+          <i class="fa-solid fa-dumbbell text-brand me-2"></i>
+          FIT<span class="text-brand ms-1">LIFE</span>
+        </a>
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#fitlifeNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="fitlifeNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#features">Dịch vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="classes.html">Lớp học</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Liên hệ</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <a href="contact.html" class="btn btn-brand fw-bold px-4 py-2"
+              >Tham gia ngay</a
+            >
+          </div>
         </div>
       </div>
+    </nav>
 
-      <div>
-          <img src="" alt="">
-          <p>PT chuyên nghiệp</p>
-          <p>Đội ngũ huấn luyện viên có chứng chỉ quốc tế, nhiệt tình và theo sát học viên.</p>
-        </div>
-      </div>
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+      <!-- ================= HERO SECTION ================= -->
+      <section
+        id="home"
+        class="hero-section d-flex align-items-center justify-content-center text-center"
+      >
+        <div class="hero-overlay"></div>
 
-      <div>
-          <img src="" alt="">
-          <p>Mở cửa 24/7</p>
-          <p>Không gò bó thời gian. Tập luyện bất cứ khi nào phù hợp với lịch trình của bạn.</p>
-        </div>
-      </div>
+        <img
+          src="./asset/image/hero_fitness_1773061859337.png"
+          alt="Gym Background"
+          class="hero-bg-img"
+        />
 
-      <section>
-        <h2>Khoác học nổi bật - FitLife, gym, yoga, thiền, PT, tăng cơ, giảm cân, vóc dáng tốt, tăng sức đề kháng</h2>
-        <div class="post_list">
-          <article>
-            <h3>Lột Xác 30 ngày</h3>
-            <p>Khóa học đốt mỡ chuyên sâu ngắn hạn. Lên tới 12 buổi/tháng cùng PT cá nhân chuyên nghiệp chuẩn y khoa, giúp lấy lại tự tin chỉ trong 1 tháng.</p>
-            <p>12 Buổi/Tháng</p>
-            <button>Tư vấn ngay</button>
-          </article>
-
-
-          <h3>Yoga Trị Liệu & Thiền</h3>
-            <p>Tập trung cải thiện sức khỏe cột sống, đau mỏi vai gáy. Tái tạo năng lượng, cân bằng tâm trí tinh thần trong nhịp sống hiện đại hối hả.</p>
-            <p>Lớp Tự Chọn</p>
-            <button>Tư vấn ngay</button>
-          </article>
-
-
-          <h3>Tăng Cơ Thẩm Mỹ</h3>
-            <p>Giáo án Hypertrophy bài bản nhất. Tập trung cực tiểu hóa rủi ro và cực đại hoá sự phát triển cơ bắp, hướng tới vóc dáng thể hình ấn tượng.</p>
-            <p>16 Buổi/Tháng</p>
-            <button>Tư vấn ngay</button>
-          </article>
-
+        <div class="container hero-content position-relative">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h1 class="hero-title text-white fw-bold mb-4">
+                PHÁ VỠ <span class="text-brand">GIỚI HẠN</span> BẢN THÂN
+              </h1>
+              <p class="hero-desc text-gray-300 mb-5">
+                Cơ sở vật chất hiện đại, huấn luyện viên chuyên nghiệp. Bắt đầu
+                hành trình thay đổi vóc dáng của bạn ngay hôm nay!
+              </p>
+              <div
+                class="hero-actions d-flex flex-column flex-sm-row gap-3 justify-content-center"
+              >
+                <a href="contact.html" class="btn-hero"
+                  >Đăng ký tập thử MIỄN PHÍ</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
+      <!-- ================= FEATURES SECTION ================= -->
+      <section id="features" class="features-section">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="text-white fw-bold uppercase">
+              Tại sao chọn chúng tôi?
+            </h2>
+            <div class="title-line mx-auto"></div>
+          </div>
 
+          <div class="row g-4 justify-content-center">
 
+            <div class="col-md-4">
+              <div class="feature-card text-center p-4">
+                <div class="feature-icon-simple mb-3">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <h3 class="feature-title-sm mb-3">Thiết bị hiện đại</h3>
+                <p class="feature-text-sm">
+                  Trang bị 100% máy móc nhập khẩu mới nhất, đảm bảo hiệu quả tập
+                  luyện tối đa.
+                </p>
+              </div>
+            </div>
 
+            <div class="col-md-4">
+              <div class="feature-card text-center p-4">
+                <div class="feature-icon-simple mb-3">
+                  <i class="fa-solid fa-user-ninja"></i>
+                </div>
+                <h3 class="feature-title-sm mb-3">PT Chuyên nghiệp</h3>
+                <p class="feature-text-sm">
+                  Đội ngũ huấn luyện viên có chứng chỉ quốc tế, nhiệt tình và
+                  theo sát học viên.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="feature-card text-center p-4">
+                <div class="feature-icon-simple mb-3">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <h3 class="feature-title-sm mb-3">Mở cửa 24/7</h3>
+                <p class="feature-text-sm">
+                  Không gò bó thời gian. Tập luyện bất cứ khi nào phù hợp với
+                  lịch trình của bạn.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= COURSES SECTION ================= -->
+      <section id="courses" class="courses-section py-5">
+        <div class="container py-lg-5">
+          <div class="text-center mb-5">
+            <h2 class="section-title text-white fw-bold mb-2 uppercase">
+              Khóa học nổi bật
+            </h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+
+          <div class="row g-4">
+
+            <div class="col-md-4">
+              <div class="course-card">
+                <div class="course-img-wrapper">
+                  <img
+                    src="./asset/image/weight_lifting_1773061899821.png"
+                    alt="Lột Xác 30 Ngày"
+                    class="course-img"
+                  />
+                  <div class="course-badge">-20% Ưu Đãi</div>
+                </div>
+                <div class="course-body p-4">
+                  <h3 class="course-name h5 fw-bold text-white mb-2">
+                    Lột Xác 30 Ngày
+                  </h3>
+                  <p class="course-desc text-gray-400 small">
+                    Khóa học đốt mỡ chuyên sâu ngắn hạn. Lên tới 12 buổi/tháng
+                    cùng PT cá nhân chuyên nghiệp.
+                  </p>
+                  <div
+                    class="course-footer d-flex justify-content-between align-items-center pt-3 mt-3 border-top border-secondary"
+                  >
+                    <span class="course-tag">12 Buổi/Tháng</span>
+                    <a
+                      href="contact.html"
+                      class="text-brand text-decoration-none fw-medium"
+                    >
+                      Tư vấn ngay <i class="fa-solid fa-arrow-right ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="course-card">
+                <div class="course-img-wrapper">
+                  <img
+                    src="./asset/image/yoga_class_1773061880929.png"
+                    alt="Yoga Trị Liệu"
+                    class="course-img"
+                  />
+                  <div class="course-badge">HOT NHẤT</div>
+                </div>
+                <div class="course-body p-4">
+                  <h3 class="course-name h5 fw-bold text-white mb-2">
+                    Yoga Trị Liệu & Thiền
+                  </h3>
+                  <p class="course-desc text-gray-400 small">
+                    Tập trung cải thiện sức khỏe cột sống, đau mỏi vai gáy. Tái
+                    tạo năng lượng và cân bằng tâm trí.
+                  </p>
+                  <div
+                    class="course-footer d-flex justify-content-between align-items-center pt-3 mt-3 border-top border-secondary"
+                  >
+                    <span class="course-tag">Lớp Tự Chọn</span>
+                    <a
+                      href="contact.html"
+                      class="text-brand text-decoration-none fw-medium"
+                    >
+                      Tư vấn ngay <i class="fa-solid fa-arrow-right ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="course-card">
+                <div class="course-img-wrapper">
+                  <img
+                    src="./asset/image/tang_co_tham_my_course_cover_1773334586403.png"
+                    alt="Tăng Cơ Thẩm Mỹ"
+                    class="course-img"
+                  />
+                </div>
+                <div class="course-body p-4">
+                  <h3 class="course-name h5 fw-bold text-white mb-2">
+                    Tăng Cơ Thẩm Mỹ
+                  </h3>
+                  <p class="course-desc text-gray-400 small">
+                    Giáo án Hypertrophy bài bản nhất. Tập trung phát triển cơ
+                    bắp, hướng tới vóc dáng ấn tượng.
+                  </p>
+                  <div
+                    class="course-footer d-flex justify-content-between align-items-center pt-3 mt-3 border-top border-secondary"
+                  >
+                    <span class="course-tag">16 Buổi/Tháng</span>
+                    <a
+                      href="contact.html"
+                      class="text-brand text-decoration-none fw-medium"
+                    >
+                      Tư vấn ngay <i class="fa-solid fa-arrow-right ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <p style="text-align: center;">&copy; 2026 Rikkei Education. Fullstack JavaScript</p>
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer py-4">
+      <div class="container text-center">
+        <p class="mb-0 footer-text">
+          &copy; 2026 FitLife Club. Fullstack JavaScript Project.
+        </p>
+      </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
