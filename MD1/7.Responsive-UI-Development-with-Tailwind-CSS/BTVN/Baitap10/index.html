@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="flex min-h-screen bg-gray-100">
+      <aside class="hidden md:flex flex-col w-64 bg-[#111827] text-gray-300">
+        <div class="p-6 text-white font-bold text-xl border-b border-gray-700">
+          TechGadget Admin
+        </div>
+        <nav class="flex-1 p-4 space-y-2">
+          <a href="#" class="block px-4 py-2 bg-blue-600 text-white rounded-lg"
+            >Tổng quan</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-800 rounded-lg transition"
+            >Đơn hàng</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-800 rounded-lg transition"
+            >Sản phẩm</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-800 rounded-lg transition"
+            >Khách hàng</a
+          >
+        </nav>
+      </aside>
+
+      <main class="flex-1 flex flex-col">
+        <header class="bg-white p-4 shadow-sm border-b border-gray-200">
+          <input
+            type="text"
+            placeholder="Tìm kiếm mã đơn hàng, sản phẩm..."
+            class="w-full max-w-md px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+          />
+        </header>
+
+        <div class="p-6 md:p-8">
+          <h2 class="text-xl font-bold text-gray-800 mb-6">
+            Tổng quan hệ thống
+          </h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100"
+            >
+              <p class="text-gray-400 text-xs font-medium mb-2 uppercase">
+                Tổng doanh thu
+              </p>
+              <p class="text-xl font-bold text-gray-800">125.000.000 đ</p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100"
+            >
+              <p class="text-gray-400 text-xs font-medium mb-2 uppercase">
+                Đơn hàng mới
+              </p>
+              <p class="text-xl font-bold text-gray-800">342</p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100"
+            >
+              <p class="text-gray-400 text-xs font-medium mb-2 uppercase">
+                Khách hàng truy cập
+              </p>
+              <p class="text-xl font-bold text-gray-800">1,204</p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100"
+            >
+              <p class="text-gray-400 text-xs font-medium mb-2 uppercase">
+                Tỉ lệ chuyển đổi
+              </p>
+              <p class="text-xl font-bold text-gray-800">4.5%</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/css">
+      :root {
+        --bg-page: #f3f4f6;
+        --bg-card: #ffffff;
+        --text-main: #1f2937;
+        --text-sub: #6b7280;
+      }
+      .dark {
+        --bg-page: #111827;
+        --bg-card: #1f2937;
+        --text-main: #f9fafb;
+        --text-sub: #9ca3af;
+      }
+      .custom-bg-page {
+        background-color: var(--bg-page);
+      }
+      .custom-bg-card {
+        background-color: var(--bg-card);
+      }
+      .custom-text-main {
+        color: var(--text-main);
+      }
+      .custom-text-sub {
+        color: var(--text-sub);
+      }
+    </style>
+  </head>
+  <body
+    class="custom-bg-page min-h-screen flex flex-col items-center justify-center p-6 transition-colors duration-500"
+  >
+    <div
+      class="custom-bg-card p-8 rounded-2xl shadow-xl max-w-sm w-full text-center border border-transparent dark:border-gray-700 transition-all duration-500"
+    >
+      <h3 class="custom-text-main font-bold text-lg uppercase">Tour Đà Lạt</h3>
+      <p class="custom-text-sub text-xs mb-4">3 Ngày 2 Đêm</p>
+
+      <div class="text-[#2563eb] dark:text-[#3b82f6] text-3xl font-bold mb-6">
+        2.500.000đ <span class="text-sm font-normal text-gray-400">/khách</span>
+      </div>
+
+      <ul
+        class="custom-text-sub text-sm text-left space-y-3 mb-8 max-w-[220px] mx-auto list-disc list-inside"
+      >
+        <li>Khách sạn 4 sao trung tâm</li>
+        <li>Xe Limousine đưa đón tận nơi</li>
+        <li>Vé tham quan tất cả các điểm</li>
+      </ul>
+
+      <button
+        class="w-full bg-[#2563eb] text-white font-bold py-3 rounded-lg hover:opacity-90 active:scale-95 transition-all"
+      >
+        ĐẶT TOUR NGAY
+      </button>
+    </div>
+
+    <button
+      onclick="toggleDarkMode()"
+      class="fixed bottom-8 right-8 px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white text-xs rounded-lg shadow-md hover:bg-gray-300 transition-all"
+    >
+      Đổi Giao Diện
+    </button>
+
+    <script>
+      function toggleDarkMode() {
+        document.documentElement.classList.toggle("dark");
+      }
+    </script>
+  </body>
+</html>
